@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="spa_demo">
+<html lang="en" ng-app="spa-demo">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<%= stylesheet_link_tag "spa_demo", :media => "all" %>
-	<%= javascript_include_tag "spa_demo" %>
+	<%= stylesheet_link_tag "spa-demo", :media => "all" %>
+	<%= javascript_include_tag "spa-demo" %>
 	<title>SPA Demo</title>
 </head>
 <body>
 	<div class="container">
 		<h1>Hello</h1>
 		<span>(from apps/view/ui/index.html.erb)</span>
+		<div ui-view></div>
 	</div>	
 </body>
 </html>
